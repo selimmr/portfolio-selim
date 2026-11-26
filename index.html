@@ -290,10 +290,11 @@
         <section class="portfolio visible" id="missions">
             <div class="container">
                 <h2 class="gsap-reveal">Missions</h2>
+                <div class="project-filters">
+                    <button class="project-btn active" onclick="filterProjects('entreprise', this)">Missions en entreprise</button>
+                    <button class="project-btn" onclick="filterProjects('formation', this)">Missions en formation</button>
+                </div>
                 <div id="entreprise-projects" class="project-group active-group" style="display: block;">
-
-                    <h3 style="text-align:center; margin-top: 3rem; margin-bottom: 2rem; color: var(--dark);">Projets en
-                        entreprise</h3>
                     <div class="portfolio-grid">
                         <!-- Projet en entreprise 1 -->
                         
@@ -391,8 +392,7 @@
 
                 </div>
 
-                <div id="formation-projects" class="project-group" style="display: block;">
-                    <h3 style="text-align:center; margin-top: 4rem; margin-bottom: 2rem; color: var(--dark);">Projets en formation</h3>
+                <div id="formation-projects" class="project-group" style="display: none;">
                     <div class="portfolio-grid" style="grid-template-columns: minmax(280px, 420px); justify-content: center;">
                         <div class="portfolio-item gsap-reveal">
                             <div class="portfolio-image" style="background: #1b1d22; min-height: 240px; display: flex; align-items: center; justify-content: center;">
