@@ -3688,3 +3688,30 @@ body.page-ready .cta-button {
         box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18), 8px 8px 0 var(--primary);
     }
 }
+
+/* Colonne droite : présentation de l'entreprise */
+#entreprise .about-content { align-items: start; }
+.company-side { display: flex; flex-direction: column; gap: 1.2rem; }
+.company-logo-card { background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 18px; padding: 1.8rem; display: flex; justify-content: center; box-shadow: 0 10px 28px rgba(0,0,0,.08); }
+.company-logo-card img { width: 100%; max-width: 320px; height: auto; }
+.company-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.company-facts .fact { background: var(--primary); color: #fff; border-radius: 16px; padding: 1.1rem 1rem; display: flex; flex-direction: column; gap: .2rem; }
+.company-facts .fact-num { font-size: 2rem; font-weight: 700; line-height: 1; }
+.company-facts .fact-txt { font-size: .85rem; opacity: .9; }
+.company-partner { background: #fff; border: 1px solid rgba(0,0,0,.08); border-radius: 16px; padding: 1.1rem 1.2rem; }
+.company-partner .partner-label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .8rem; color: var(--gray); }
+.company-partner .partner-logo { background: #1570C1; border-radius: 12px; padding: 1.1rem; display: flex; justify-content: center; }
+.company-partner .partner-logo img { max-width: 220px; width: 100%; height: auto; }
+.company-tags { display: flex; flex-wrap: wrap; gap: .5rem; }
+.company-tags span { font-size: .8rem; padding: .35rem .8rem; border-radius: 99px; background: rgba(0,0,0,.05); }
+[data-theme="dark"] .company-logo-card, [data-theme="dark"] .company-partner { background: #182235; border-color: rgba(255,255,255,.1); }
+[data-theme="dark"] .company-logo-card { background: #fff; }
+[data-theme="dark"] .company-tags span { background: rgba(255,255,255,.1); }
+@media (max-width: 768px) { .company-side { margin-top: 1.5rem; } }
+
+/* Organigramme : plus compact pour tenir avec 4 apprentis */
+.tree li { padding: 20px 5px 0 5px; }
+.tree .node { min-width: 112px; max-width: 124px; padding: .7rem .5rem; }
+.tree .node strong { font-size: .72rem; }
+.tree .node p { font-size: .75rem; }
+.org-chart-container { padding: 1.5rem 1rem; }
