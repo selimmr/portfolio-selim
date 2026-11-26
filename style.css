@@ -3715,3 +3715,19 @@ body.page-ready .cta-button {
 .tree .node strong { font-size: .72rem; }
 .tree .node p { font-size: .75rem; }
 .org-chart-container { padding: 1.5rem 1rem; }
+
+/* Nom en évidence dans l'en-tête */
+.hero h1 .hero-name {
+    display: inline-block;
+    font-size: clamp(2.8rem, 9vw, 6rem);
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.05;
+    color: var(--primary);
+}
+.hero h1 .hero-role {
+    display: inline-block;
+    margin-top: 0.8rem;
+    font-size: clamp(1.2rem, 3.2vw, 2rem);
+    font-weight: 500;
+}
